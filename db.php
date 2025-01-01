@@ -1,0 +1,15 @@
+<?php
+$host = 'localhost';     // Database host
+$dbname = 'librarybooking'; // Database name
+$username = 'root'; // Database username
+$password = ''; // Database password
+
+// Create a PDO instance for database connection
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    // Set PDO error mode to exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
+?>

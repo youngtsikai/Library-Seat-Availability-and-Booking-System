@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Midlands State University Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #2d4452;
+            color: #333;
+        }
+        .lib-header {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 3px 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .lib-nav {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between links */
+    }
+    .lib-nav a {
+        color: white;
+        text-decoration: none;
+        padding: 3px 6px;
+        transition: background-color 0.3s;
+    }
+    .lib-nav a:hover {
+        background-color: #106369;
+        border-radius: 5px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .lib-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .lib-dropdown-btn {
+        background-color: #106369;
+        border-radius: 5px;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: background-color 0.3s;
+    }
+    
+    .lib-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #106369;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0; 
+        top: 100%; 
+    }
+    
+    .lib-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .lib-dropdown-content a:hover {
+        background-color: #faec2a;
+    }
+    
+    .lib-dropdown:hover .lib-dropdown-content {
+        display: block; 
+    }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background:yellow;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+        .lib-h2 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="lib-header">
+        <h2>Library Seat Availability & Booking System</h2>
+                <nav class="lib-nav">
+                    <a href="homepage.php">Homepage</a>
+                    <a href="about.html">About Us</a>
+                    <a href="Contact.html">Contact Us</a>
+                    <div class="lib-dropdown">
+                        <button class="lib-dropdown-btn"><img src="user.png" alt="user icon" width="26" height="26"></button>
+                        <div class="lib-dropdown-content">
+                            <a href="mybookings.php">Active Bookings</a>
+                            <a href="logout.php">Logout</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+<div class="container">
+    <img src="xmain-logo.png" alt="user icon" width="250" >
+    <h2>Our Mission</h2>
+    <p>At Midlands State University Library, our mission is to support the academic success and research needs of our university community by providing access to a diverse range of information resources, services, and technologies. We strive to foster an inclusive and collaborative environment that encourages learning, innovation, and personal growth.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision a library that serves as a vibrant hub of knowledge, inspiring students and faculty to explore, discover, and create. By leveraging technology and cultivating partnerships, we aim to enhance the learning experience and contribute to the advancement of knowledge.</p>
+
+    <h2>Our Services</h2>
+    <ul>
+        <li><strong>Resource Access:</strong> We offer a wide array of resources, including books, journals, databases, and digital media.</li>
+        <li><strong>Research Support:</strong> Our skilled librarians provide guidance in research methodologies and information literacy.</li>
+        <li><strong>Study Spaces:</strong> The library features a variety of study environments, accommodating individual and group study needs.</li>
+        <li><strong>Workshops and Events:</strong> We host regular workshops and events designed to enhance research skills.</li>
+    </ul>
+
+    <h2>Our Team</h2>
+    <p>Our dedicated team of librarians and support staff is committed to providing exceptional service and fostering a welcoming atmosphere.</p>
+
+    <h2>Get Involved</h2>
+    <p>We encourage feedback and participation from our university community. Join us for events, utilize our resources, or reach out with any questions or suggestions.</p>
+
+    <h2>Contact Us</h2>
+    <p>
+        <strong>Email:</strong> <a href="mailto:library@msu.ac.zw">library@msu.ac.zw</a><br>
+        <strong>Phone:</strong> +263 4 123 456<br>
+        <strong>Visit:</strong> Midlands State University Campus, Gweru, Zimbabwe
+    </p>
+</div>
+</body>
+</html>
